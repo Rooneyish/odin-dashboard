@@ -1,0 +1,47 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 4px;
+}
+.container .sidebar {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-self: unset;
+}
+.container .sidebar .navigation, .container .sidebar .support {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-self: unset;
+  gap: 4px;
+}
+.container .sidebar .navigation li, .container .sidebar .support li {
+  list-style: none;
+}
+.container .sidebar .navigation li a, .container .sidebar .support li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #000000;
+}
+.container .sidebar .navigation li a:hover, .container .sidebar .support li a:hover {
+  text-decoration: underline;
+}
+
+.search-menu {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+.search-menu .search-box {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.search-menu .search-box input[type=search] {
+  flex-grow: 1;
+}/*# sourceMappingURL=style.css.map */
