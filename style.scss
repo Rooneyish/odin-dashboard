@@ -1,47 +1,82 @@
-.container{
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    gap:4px;
-    .sidebar{
-        grid-column: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-self: unset;
-        .navigation, .support{
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            justify-self: unset;
-            gap: 4px;
-            li{
-                list-style: none;
-                a{
-                    text-decoration: none;
-                    font-size: 20px;
-                    color: #000000;
-                    &:hover{
-                        text-decoration: underline;
-                    }
-                }
-            }
-        }
-    }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
 }
 
-.search-menu{
-    grid-column: 2/3;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    gap: 10px;
-    .search-box{
-        display: flex;
-        align-items: center;
-        gap: 4px;
-        input[type="search"]{
-            flex-grow: 1;
-        }
-    }
+:root {
+  --primary-color: #fff5e1;
+  --secondary-color: #0c1844;
+  --tertiary-color: #ff8585;
+  --quaternary-color: #da9595;
+}
+
+.container{
+  text-align: center;
+  background-color: var(--primary-color);
+  display: gird;
+  grid-template-columns:1fr 4fr;
+  gap: 4px;
+}
+
+.container div{
+  padding: 15px;
+  color: var(--secondary-color);
+  border: 4px solid var(--secondary-color);
+}
+
+
+
+
+.profile-pic-1 {
+  width: 50px;
+  height: 50px;
+  img {
+    border-radius: 50%;
+    border: 4px solid var(--secondary-color);
+    object-fit: cover;
+  }
+}
+.profile-pic-2 {
+  width: 70px;
+  height: 70px;
+  img {
+    border-radius: 50%;
+    border: 4px solid var(--secondary-color);
+    object-fit: cover;
+  }
 }

@@ -1,46 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin-Dashboard</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
     <main class="container">
-        <div class="sidebar">
-            <h2>Dashboard</h2>
-            <ul class="navigation">
-                <li><a href="">Home</a></li>
-                <li><a href="">Profile</a></li>
-                <li><a href="">Messages</a></li>
-                <li><a href="">History</a></li>
-                <li><a href="">Tasks</a></li>
-                <li><a href="">Communities</a></li>
-            </ul>
-            <ul class="support">
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
-            </ul>
+      <!-- Header -->
+      <div class="header">
+        <div class="dashboard-title">Dashboard</div>
+        <div class="menu">
+          <ul>
+            <li><svg width="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>magnify</title><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" /></svg></li>
+            <li><input type="search" /></li>
+            <li><svg width="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>bell-outline</title><path d="M10 21H14C14 22.1 13.1 23 12 23S10 22.1 10 21M21 19V20H3V19L5 17V11C5 7.9 7 5.2 10 4.3V4C10 2.9 10.9 2 12 2S14 2.9 14 4V4.3C17 5.2 19 7.9 19 11V17L21 19M17 11C17 8.2 14.8 6 12 6S7 8.2 7 11V18H17V11Z" /></svg></li>
+            <li>
+              <div class="profile-pic-1">
+                <img
+                  src="https://images.macrumors.com/t/Vw5RbHqEqYrJu7CShdyg_Pdwocg=/1200x1200/smart/article-new/2021/03/Instagram-Feature-1.jpg"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li><a href="">rooneyish</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <div class="menu">
+          <li class="menu-list"><a href="">Home</a></li>
+          <li class="menu-list"><a href="">Profile</a></li>
+          <li class="menu-list"><a href="">Messages</a></li>
+          <li class="menu-list"><a href="">History</a></li>
+          <li class="menu-list"><a href="">Tasks</a></li>
+          <li class="menu-list"><a href="">Communites</a></li>
+        </div>
+        <div class="services">
+          <li class="service-list"><a href="">Settings</a></li>
+          <li class="service-list"><a href="">Support</a></li>
+          <li class="service-list"><a href="">Privacy</a></li>
+        </div>
+      </div>
+
+      <div class="profile-bar">
+        <ul>
+          <li>
+            <div class="profile-pic-2">
+              <img
+                src="https://images.macrumors.com/t/Vw5RbHqEqYrJu7CShdyg_Pdwocg=/1200x1200/smart/article-new/2021/03/Instagram-Feature-1.jpg"
+                alt=""
+              />
+            </div>
+          </li>
+          <li>
+            <span>Hi there, </span><br />
+            rooneyish ( <a href="">@rooney.ish</a> )
+          </li>
+          <li>
+            <button>New</button>
+          </li>
+          <li>
+            <button>Upload</button>
+          </li>
+          <li>
+            <button>Share</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="article">
+        <div class="mid">
+          <h3>My Projects</h3>
+          <div class="card">
+            <p class="title">Title</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              at, fugit commodi deleniti quos tenetur q
+            </p>
+          </div>
+          <div class="card">
+            <p class="title">Title</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              at, fugit commodi deleniti quos tenetur q
+            </p>
+          </div>
+          <div class="card">
+            <p class="title">Title</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              at, fugit commodi deleniti quos tenetur q
+            </p>
+          </div>
+          <div class="card">
+            <p class="title">Title</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              at, fugit commodi deleniti quos tenetur q
+            </p>
+          </div>
+          <div class="card">
+            <p class="title">Title</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              at, fugit commodi deleniti quos tenetur q
+            </p>
+          </div>
+          <div class="card">
+            <p class="title">Title</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              at, fugit commodi deleniti quos tenetur q
+            </p>
+          </div>
+          <div class="card">
+            <p class="title">Title</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              at, fugit commodi deleniti quos tenetur q
+            </p>
+          </div>
         </div>
 
-        <div class="search-menu">
-            <div class="search-box">
-                <!-- icon -->
-                <div><i class="fa-solid fa-magnifying-glass"></i></div>
-                <input type="search" id="search">
+        <div class="right">
+          <h3>Announcements</h3>
+          <div class="announcements">
+            <div class="card">
+              <div>
+                <p class="title">Title</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum at, fugit commodi deleniti quos tenetur q
+                </p>
+              </div>
+
+              <div>
+                <p class="title">Title</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum at, fugit commodi deleniti quos tenetur q
+                </p>
+              </div>
+
+              <div>
+                <p class="title">Title</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum at, fugit commodi deleniti quos tenetur q
+                </p>
+              </div>
             </div>
-            <!-- notification button -->
-            <!-- profile button -->
-            <img src="" alt=""> 
-            <p>rooneyish</p>
+          </div>
+
+          <h3>Trending</h3>
+          <div class="trending">
+            <div class="card">
+              <div>
+                <p class="title">Title</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum at, fugit commodi deleniti quos tenetur q
+                </p>
+              </div>
+
+              <div>
+                <p class="title">Title</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum at, fugit commodi deleniti quos tenetur q
+                </p>
+              </div>
+
+              <div>
+                <p class="title">Title</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum at, fugit commodi deleniti quos tenetur q
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="intro">
-            
-        </div>
-        <div class="article"></div>
+      </div>
     </main>
-</body>
+  </body>
 </html>
