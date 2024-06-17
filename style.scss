@@ -45,32 +45,123 @@ h6 {
   --quaternary-color: #da9595;
 }
 
+main{
+  height: 100vh;
+}
+
 .container{
-  text-align: center;
-  background-color: var(--primary-color);
-  display: gird;
-  grid-template-columns:1fr 4fr;
+  text-align:center;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
   gap: 4px;
 }
 
 .container div{
   padding: 15px;
-  color: var(--secondary-color);
-  border: 4px solid var(--secondary-color);
+  border: 1px solid var(--tertiary-color);
 }
 
+.header{
+  background-color: var(--primary-color);
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
 
-
+.menu ul{
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+  gap: 4px;
+  li{
+    list-style: none;
+    input{
+      width: 100%;
+    }
+    a{
+      text-decoration: none;
+      color: var(--secondary-color);
+      &:hover{
+        color: var(--tertiary-color);
+      }
+    }
+  }
+}
 
 .profile-pic-1 {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   img {
     border-radius: 50%;
     border: 4px solid var(--secondary-color);
     object-fit: cover;
   }
 }
+
+.sidebar{
+  background-color: var(--primary-color);
+  grid-row: 2/4;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .menu{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    li{
+      list-style: none;
+      text-align: left;
+      a{
+        text-decoration: none;
+        color: var(--secondary-color);
+        &:hover{
+          color: var(--tertiary-color);
+        }
+      }
+    }
+  }
+  .services{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    li{
+      list-style: none;
+      text-align: left;
+      a{
+        text-decoration: none;
+        color: var(--secondary-color);
+        &:hover{
+          color: var(--tertiary-color);
+        }
+      }
+    }
+  }
+}
+
+.profile-bar{
+  grid-column: 2/3;
+  background-color: var(--primary-color);
+  .welcome-msg{
+    text-align: left;
+  }
+  ul{
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr 1fr 1fr;
+    align-items: center;
+    li{
+      list-style: none;
+      text-align: center;
+      a{
+        text-decoration: none;
+        color: var(--secondary-color);
+        &:hover{
+          color: var(--tertiary-color);
+        }
+      }
+    }
+  }
+}
+
+
 .profile-pic-2 {
   width: 70px;
   height: 70px;
@@ -78,5 +169,20 @@ h6 {
     border-radius: 50%;
     border: 4px solid var(--secondary-color);
     object-fit: cover;
+  }
+}
+
+
+.article{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 4px;
+  background-color: var(--primary-color);
+  .mid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    .card{
+      height: 250px;
+    }
   }
 }
