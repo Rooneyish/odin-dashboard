@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Khand:wght@300;400;500;600;700&family=Spinnaker&display=swap");
 *,
 *::before,
 *::after {
@@ -49,35 +50,38 @@ h6 {
   --secondary-color: #0c1844;
   --tertiary-color: #ff8585;
   --quaternary-color: #da9595;
-}
-
-main {
-  height: 100vh;
+  --primary-font: "Khand", sans-serif;
+  --tertiary-font: "Spinnaker", cursive;
+  --secondary-font: "Averia Sans Libre", sans-serif;
 }
 
 .container {
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 4fr;
-  gap: 4px;
 }
 
 .container div {
-  padding: 15px;
-  border: 1px solid var(--tertiary-color);
+  padding: 10px;
 }
 
 .header {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   grid-column: 1/3;
   display: grid;
   grid-template-columns: 1fr 4fr;
+  height: 100px;
+  align-items: center;
 }
 
+.menu {
+  background-color: var(--primary-color);
+}
 .menu ul {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
   gap: 4px;
+  align-items: center;
 }
 .menu ul li {
   list-style: none;
@@ -88,6 +92,9 @@ main {
 .menu ul li a {
   text-decoration: none;
   color: var(--secondary-color);
+  font-family: "Averia Sans Libre", sans-serif;
+  font-weight: 700;
+  font-style: bold;
 }
 .menu ul li a:hover {
   color: var(--tertiary-color);
@@ -105,26 +112,29 @@ main {
 }
 
 .sidebar {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   grid-row: 2/4;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  font-size: larger;
 }
-.sidebar .menu {
+.sidebar .menu-sidebar {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.sidebar .menu li {
+.sidebar .menu-sidebar li {
   list-style: none;
   text-align: left;
 }
-.sidebar .menu li a {
+.sidebar .menu-sidebar li a {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--primary-color);
+  font-family: var(--secondary-font);
+  font-weight: 700;
 }
-.sidebar .menu li a:hover {
+.sidebar .menu-sidebar li a:hover {
   color: var(--tertiary-color);
 }
 .sidebar .services {
@@ -138,7 +148,9 @@ main {
 }
 .sidebar .services li a {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--primary-color);
+  font-family: var(--secondary-font);
+  font-weight: 700;
 }
 .sidebar .services li a:hover {
   color: var(--tertiary-color);
@@ -191,4 +203,16 @@ main {
 }
 .article .mid .card {
   height: 250px;
+}
+
+.dashboard-title {
+  font-family: var(--primary-font);
+  font-size: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-self: center;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */
