@@ -61,7 +61,7 @@ ul li {
   list-style: none;
   padding-left: 10px;
   border-radius: 25px;
-  transition: , 3s;
+  transition: 0.3s;
 }
 
 a {
@@ -73,6 +73,7 @@ a {
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 1fr 10fr;
   height: 100vh;
+  background-color: var(--primary-color);
 }
 
 .sidebar-container {
@@ -82,7 +83,7 @@ a {
 }
 
 .header-container {
-  background-color: var(--primary-color);
+  background-color: transparent;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -91,34 +92,34 @@ a {
 }
 
 .profile-container {
-  background-color: var(--primary-color);
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px;
   border-top: 3px solid var(--tertiary-color);
+  border-bottom: 3px solid var(--secondary-color);
 }
 
 .article-container {
-  background-color: #fff5e1;
+  background-color: transparent;
   display: grid;
   grid-template-columns: 4fr 1fr;
 }
 
 .my-article-container {
-  background-color: var(--primary-color);
+  background-color: transparent;
   display: grid;
   grid-row: 1/3;
   grid-template-columns: 1;
   grid-template-rows: 1fr 14fr;
 }
 
-.announcement-container {
-  background-color: purple;
-}
-
+.announcement-container,
 .trending-container {
-  background-color: yellow;
+  border-left: 3px solid var(--tertiary-color);
+  padding: 10px 10px;
+  margin-bottom: 10px;
 }
 
 .articles {
@@ -130,7 +131,7 @@ a {
   margin: 0px 20px 10px 20px;
 }
 .articles > div {
-  background-color: var(--primary-color);
+  background-color: transparent;
   border: 3px solid var(--tertiary-color);
   border-radius: 20px;
 }
@@ -274,7 +275,7 @@ ul li:hover {
   align-items: center;
   padding-left: 20px;
   font-family: var(--tertiary-font);
-  background-color: var(--primary-color);
+  background-color: transparent;
   font-size: 20px;
   color: var(--tertiary-color);
 }
@@ -288,4 +289,92 @@ ul li:hover {
 
 .card {
   padding: 8px;
+}
+
+.card > h3 > a {
+  font-family: var(--secondary-font);
+  color: var(--tertiary-color);
+  font-size: 24px;
+}
+
+.card > h3 > a:hover {
+  color: var(--secondary-color);
+  transition: 0.3s;
+}
+
+.card > p {
+  color: var(--secondary-color);
+  font-family: var(--tertiary-font);
+  overflow: hidden;
+  height: 50px;
+}
+
+.icons {
+  font-size: 24px;
+  text-align: right;
+}
+
+.icons > a {
+  color: var(--tertiary-color);
+}
+
+.announcement-container h2,
+.trending-container h2 {
+  font-family: var(--tertiary-font);
+  color: var(--tertiary-color);
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.announcement-container p,
+.trending-container p {
+  font-family: var(--tertiary-font);
+  color: var(--tertiary-color);
+  overflow: hidden;
+  height: 50px;
+  border-bottom: 2px solid var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+.announcement-container h3 a,
+.trending-container h3 a {
+  font-family: var(--secondary-font);
+  color: var(--secondary-color);
+  font-size: 20px;
+}
+
+.trends {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trends > img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid var(--tertiary-color);
+  object-fit: cover;
+}
+
+.trends > div {
+  width: 70%;
+}
+
+.color-button {
+  height: 30px;
+  width: 30px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  border: 4px solid var(--tertiary-color);
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.color-button:hover {
+  background-color: var(--secondary-color);
+  transition: 0.3s;
 }
