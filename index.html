@@ -6,191 +6,88 @@
     <title>Odin-Dashboard</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <main class="container">
-      <!-- Header -->
-      <div class="header">
-        <div class="dashboard-title"><span style="font-size: 40px;" class="mdi mdi-view-dashboard-variant"></span><title>menu</title><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>Dashboard</div>
-        <div class="menu">
-          <ul>
-            <li><span style="font-size: 30px;" class="mdi mdi-magnify"></span></li>
-            <li><input type="search" /></li>
-            <li><svg width="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>bell-outline</title><path d="M10 21H14C14 22.1 13.1 23 12 23S10 22.1 10 21M21 19V20H3V19L5 17V11C5 7.9 7 5.2 10 4.3V4C10 2.9 10.9 2 12 2S14 2.9 14 4V4.3C17 5.2 19 7.9 19 11V17L21 19M17 11C17 8.2 14.8 6 12 6S7 8.2 7 11V18H17V11Z" /></svg></li>
-            <li>
-              <div class="profile-pic-1">
-                <img
-                  src="https://images.macrumors.com/t/Vw5RbHqEqYrJu7CShdyg_Pdwocg=/1200x1200/smart/article-new/2021/03/Instagram-Feature-1.jpg"
-                  alt=""
-                />
-              </div>
-            </li>
-            <li><a href="">rooneyish</a></li>
-          </ul>
+    <main>
+      <div class="container">
+        <div class="sidebar-container">
+          <div class="dashboard">
+            <span
+              style="font-size: 60px"
+              class="mdi mdi-view-dashboard-variant"
+            ></span>
+            <h2>Dashboard</h2>
+          </div>
+          <div class="sidebar-menu">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">Profile</a></li>
+              <li><a href="">Messages</a></li>
+              <li><a href="">History</a></li>
+              <li><a href="">Tasks</a></li>
+              <li><a href="">Communities</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-services">
+            <ul>
+              <li><a href="">Settings</a></li>
+              <li><a href="">Support</a></li>
+              <li><a href="">Privacy</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-
-      <div class="sidebar">
-        <div class="menu-sidebar">
-          <li class="menu-list"><a href="">Home</a></li>
-          <li class="menu-list"><a href="">Profile</a></li>
-          <li class="menu-list"><a href="">Messages</a></li>
-          <li class="menu-list"><a href="">History</a></li>
-          <li class="menu-list"><a href="">Tasks</a></li>
-          <li class="menu-list"><a href="">Communites</a></li>
+        <div class="header-container">
+          <span style="font-size: 30px" class="mdi mdi-magnify"></span>
+          <input type="search" />
+          <span style="font-size: 30px" class="mdi mdi-bell-outline"></span>
+          <div class="profile-pic-1">
+            <img
+              width="60px"
+              height="60px"
+              bor
+              src="https://viking.style/wp-content/uploads/2023/04/Odin-Lose-His-Eye.jpg"
+              alt=""
+            />
+            <p><a href="">rooneyish</a></p>
+          </div>
         </div>
-        <div class="services">
-          <li class="service-list"><a href="">Settings</a></li>
-          <li class="service-list"><a href="">Support</a></li>
-          <li class="service-list"><a href="">Privacy</a></li>
-        </div>
-      </div>
-
-      <div class="profile-bar">
-        <ul>
-          <li>
-            <div class="profile-pic-2">
-              <img
-                src="https://images.macrumors.com/t/Vw5RbHqEqYrJu7CShdyg_Pdwocg=/1200x1200/smart/article-new/2021/03/Instagram-Feature-1.jpg"
-                alt=""
-              />
-            </div>
-          </li>
-          <li class="welcome-msg">
-            <span>Hi there, </span><br />
-            rooneyish ( <a href="">@rooney.ish</a> )
-          </li>
-          <li>
+        <div class="profile-container">
+          <div class="profile-pic-2">
+            <img
+              width="80px"
+              height="80px"
+              bor
+              src="https://viking.style/wp-content/uploads/2023/04/Odin-Lose-His-Eye.jpg"
+              alt=""
+            />
+            <p>
+              <span>Hi there, </span><br />
+              Ronish Prajapati (<a href="">@rooneyish</a>)
+            </p>
+          </div>
+          <div class="buttons">
             <button>New</button>
-          </li>
-          <li>
             <button>Upload</button>
-          </li>
-          <li>
             <button>Share</button>
-          </li>
-          <li>
-            <h3>My Projects</h3>
-          </li>
-        </ul>
-      </div>
-
-      <div class="article">
-        <div class="mid">
-          <div class="card">
-            <p class="title">Title</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-              at, fugit commodi deleniti quos tenetur q
-            </p>
-          </div>
-          <div class="card">
-            <p class="title">Title</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-              at, fugit commodi deleniti quos tenetur q
-            </p>
-          </div>
-          <div class="card">
-            <p class="title">Title</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-              at, fugit commodi deleniti quos tenetur q
-            </p>
-          </div>
-          <div class="card">
-            <p class="title">Title</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-              at, fugit commodi deleniti quos tenetur q
-            </p>
-          </div>
-          <div class="card">
-            <p class="title">Title</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-              at, fugit commodi deleniti quos tenetur q
-            </p>
-          </div>
-          <div class="card">
-            <p class="title">Title</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-              at, fugit commodi deleniti quos tenetur q
-            </p>
-          </div>
-          <div class="card">
-            <p class="title">Title</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-              at, fugit commodi deleniti quos tenetur q
-            </p>
           </div>
         </div>
-
-        <div class="right">
-          <h3>Announcements</h3>
-          <div class="announcements">
-            <div class="card">
-              <div>
-                <p class="title">Title</p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laborum at, fugit commodi deleniti quos tenetur q
-                </p>
-              </div>
-
-              <div>
-                <p class="title">Title</p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laborum at, fugit commodi deleniti quos tenetur q
-                </p>
-              </div>
-
-              <div>
-                <p class="title">Title</p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laborum at, fugit commodi deleniti quos tenetur q
-                </p>
-              </div>
+        <div class="article-container">
+          <div class="my-article-container">
+            <div class="title"></div>
+            <div class="articles">
+              <div class="card"></div>
+              <div class="card"></div>
+              <div class="card"></div>
+              <div class="card"></div>
+              <div class="card"></div>
+              <div class="card"></div>
             </div>
           </div>
-
-          <h3>Trending</h3>
-          <div class="trending">
-            <div class="card">
-              <div>
-                <p class="title">Title</p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laborum at, fugit commodi deleniti quos tenetur q
-                </p>
-              </div>
-
-              <div>
-                <p class="title">Title</p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laborum at, fugit commodi deleniti quos tenetur q
-                </p>
-              </div>
-
-              <div>
-                <p class="title">Title</p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laborum at, fugit commodi deleniti quos tenetur q
-                </p>
-              </div>
-            </div>
-          </div>
+          <div class="announcement-container"></div>
+          <div class="trending-container"></div>
         </div>
       </div>
     </main>
